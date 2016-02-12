@@ -6,7 +6,7 @@ package hackerranking.introduction
 object Introduction {
 
   def main(args: Array[String]) {
-    println(arrayofNelements(5))
+    println(reversealist(List(1, 2, 3, 4)))
   }
 
   def solvemefirst() = println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)
@@ -20,8 +20,10 @@ object Introduction {
   def filterarray(delim: Int, arr: List[Int]): List[Int] = arr.filter(x => x < delim)
 
   def filterpositionsinalist(arr: List[Int]): List[Int] = arr.zipWithIndex.filter(x => x._2 % 2 == 1).map(x => x._1)
-  
-  def arrayofNelements(num : Int) : List[Int] = (1 to num).toList
+
+  def arrayofNelements(num: Int): List[Int] = (1 to num).toList
+
+  def reversealist(arr: List[Int]): List[Int] = arr.reverse
 
 }
 
