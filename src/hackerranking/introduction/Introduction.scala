@@ -6,14 +6,14 @@ package hackerranking.introduction
 object Introduction {
 
   def main(args: Array[String]) {
-    println(updatelist(List(-3, 4, -5, -6, 8)))
+    println(evaluatingex(20))
   }
 
   def solvemefirst() = println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)
 
   def helloworld() = println("Hello World")
 
-  def helloworldNtimes(n: Int) = (1 to n).foreach(_ => helloworld())
+  def helloworldNtimes(n: Int) = (1 to n).foreach(_ => println("Hello World"))
 
   def listreplication(n: Int, arr: List[Int]): List[Int] = arr.map(x => (1 to n).map(_ => x)).flatten.toList
 
@@ -28,8 +28,18 @@ object Introduction {
   def sumofoddnumbers(arr: List[Int]): Int = arr.filter(_ % 2 != 0).sum
 
   def listlength(arr: List[Int]): Int = arr.map(_ => 1).sum
-  
-  def updatelist(arr:List[Int]):List[Int] = arr.map(x => x.abs)
+
+  def updatelist(arr: List[Int]): List[Int] = arr.map(x => x.abs)
+
+  def evaluatingex(x: Float): Float = {
+
+    def factorial(n: Int): Int =
+      if (n == 0 || n == 1) 1
+      else n * factorial(n - 1)
+
+    (0 to 9).map(i => Math.pow(x, i) / factorial(i)).sum.toFloat
+
+  }
 
 }
 
