@@ -6,7 +6,7 @@ package hackerranking.introduction
 object Introduction {
 
   def main(args: Array[String]) {
-    println(sumofoddnumbers(List()))
+    println(listlength(List(3, 4, 5, 6, 8)))
   }
 
   def solvemefirst() = println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)
@@ -26,6 +26,8 @@ object Introduction {
   def reversealist(arr: List[Int]): List[Int] = arr.reverse
 
   def sumofoddnumbers(arr: List[Int]): Int = arr.filter(_ % 2 != 0).sum
+
+  def listlength(arr: List[Int]): Int = arr.map(_ => 1).sum
 
 }
 
