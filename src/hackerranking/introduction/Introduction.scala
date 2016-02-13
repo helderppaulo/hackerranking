@@ -87,6 +87,13 @@ object Introduction {
   // Lambda Calculus - Evaluating Expressions #1
   // (λx.x+1)3
   // [3/x] = 3+1 = 4
+
+  // Lambda Calculus - Evaluating Expressions #2
+  // (λx.x+1) ((λy.y+2)3)
+  // [3/y] = (λx.x+1) (3+2)
+  // [(3+2)/x] = (3+2)+1 = 6
+  
+  // Lambda Calculus - Evaluating Expressions #3
   
 }
 
