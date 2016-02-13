@@ -60,6 +60,11 @@ object Introduction {
   // [(λz.z)/x] = ((λz.z) y)
   // [y/z] = (y) = y
   
+  // Lambda Calculus - Reductions #2
+  // ((λx.((λy.(x y))x))(λz.w))
+  // [(λz.w)/x] = (λy.((λz.w) y)) (λz.w)
+  // [(λz.w)/y] = ((λz.w) (λz.w))
+  // [(λz.w)/z] = w
 
 }
 
