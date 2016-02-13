@@ -66,5 +66,15 @@ object Introduction {
   // [(λz.w)/y] = ((λz.w) (λz.w))
   // [(λz.w)/z] = w
 
+  // Lambda Calculus - Reductions #3
+  // ((λx.(x x))(λx.(x x))) 
+  // ((λx.(x x))(λy.(y y)))
+  // [(λy.(y y))/x] = (λy.(y y)) (λy.(y y))
+  // (λy.(y y)) (λz.(z z))                    // (1)
+  // [(λz.(z z))/y] = (λz.(z z)) (λz.(z z))
+  // (λx.(x x)) (λx.(x x))                    // (2)
+  // (1) e (2) são iguais, vão substituir ad infinitum
+  // CAN'T REDUCE
+  
 }
 
