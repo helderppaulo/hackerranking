@@ -76,5 +76,16 @@ object Introduction {
   // (1) e (2) são iguais, vão substituir ad infinitum
   // CAN'T REDUCE
   
+  // Lambda Calculus - Reductions #4
+  // (λg.((λf.((λx.(f (x x)))(λx.(f (x x))))) g)) 
+  // λg.(  (λf.( (λx.(f (x x))) (λx.(f (x x))) )) g)          // (1)
+  // reduzindo ( (λx.(f (x x))) (λx.(f (x x))) )              // (2)
+  // [(λx.(f (x x))) / x] = ( (λx.(f (x x))) (λx.(f (x x))) ) // (3)
+  // (2) e (3) são iguais, vão substituir ad infinitum
+  // CAN'T REDUCE
+  
+  
+  
+  
 }
 
