@@ -9,10 +9,6 @@ import Math.pow
 object Introduction {
 
   def main(args: Array[String]) {
-    val coefs = List(1, 2)
-    val powers = List(0, 1)
-    println(summation(f, 20, 2, coefs, powers))
-    println(summation(area, 20, 2, coefs, powers))
   }
 
   def solvemefirst() = println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)
@@ -58,6 +54,12 @@ object Introduction {
     val length = 0.001
     ((lowerLimit / length).toInt to (upperLimit / length - 1).toInt).map(x => func(coefficients, powers, x * length) * length).sum
   }
+  
+  // Lambda Calculus - Reductions #1
+  // ((λx.(x y))(λz.z))
+  // [(λz.z)/x] = ((λz.z) y)
+  // [y/z] = (y) = y
+  
 
 }
 
