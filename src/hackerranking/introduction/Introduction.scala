@@ -84,8 +84,9 @@ object Introduction {
   // (2) e (3) são iguais, vão substituir ad infinitum
   // CAN'T REDUCE
   
-  
-  
+  // Lambda Calculus - Evaluating Expressions #1
+  // (λx.x+1)3
+  // [3/x] = 3+1 = 4
   
 }
 
