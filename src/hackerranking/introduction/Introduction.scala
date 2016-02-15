@@ -96,6 +96,12 @@ object Introduction {
   // Lambda Calculus - Evaluating Expressions #3
   // λx.λy.x^47y
   // por definição 47
+
+  // Lambda Calculus - Evaluating Expressions #4
+  //  λx.λy.x(xy)
+  // por definição 2
+  
+  
   
 }
 
