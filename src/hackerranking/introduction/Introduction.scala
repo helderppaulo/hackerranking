@@ -94,6 +94,8 @@ object Introduction {
   // [(3+2)/x] = (3+2)+1 = 6
   
   // Lambda Calculus - Evaluating Expressions #3
+  // λx.λy.x^47y
+  // por definição 47
   
 }
 
