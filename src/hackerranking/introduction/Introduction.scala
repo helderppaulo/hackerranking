@@ -101,7 +101,9 @@ object Introduction {
   //  λx.λy.x(xy)
   // por definição 2
   
-  
+  // Lambda Calculus - Evaluating Expressions #5
+  // λx.λy.y
+  // por definição 0
   
 }
 
